@@ -399,7 +399,7 @@ przekopiowane_file  = open ('__csv\\przekopiowane_'+naz_lik_log+'.csv', 'w')
 
 teraz = time.asctime( time.localtime(time.time()))
 try:
-	conn = psycopg2.connect("dbname='krakowski_budynki_v02' user='postgres' host='127.0.0.1' password='aaaaaa'")
+	conn = psycopg2.connect("dbname='krakowski_budynki_v02' user='postgres' host='_host_name_' password='_passwd_'")
 	naz_log_log.write(teraz + ' [INF] Polaczono z baza danych\n')
 except:
 	print "I am unable to connect to the database"
